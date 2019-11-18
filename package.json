@@ -1,0 +1,18 @@
+{
+  "name": "MyApp",
+  "version": "1.0.0",
+  "main": "app_files/Main.js",
+  "scripts": {
+    "app-debug": "electron .",
+    "app-debug": "electron . enable-debug-mode",
+    "build-win32-x64": "electron-packager . MyApp-1.0.0 --overwrite --platform=win32 --arch=x64 --icon=app_files/Logo.ico --prune=true --out=release_builds --version-string.CompanyName=NXP --version-string.ProductName=\"Electron GUI wrapper for MyApp web application\" --executableName=MyApp",
+    "build-linux-x64": "electron-packager . MyApp-1.0.0 --overwrite --platform=linux --arch=x64 --icon=app_files/Logo.png --prune=true --out=release_builds --version-string.CompanyName=NXP --version-string.ProductName=\"Electron GUI wrapper for MyApp web application\" --executableName=MyApp"
+  },
+  "author": "John Doe",
+  "email": "john.doe@gmail.com",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^4.2.10",
+    "electron-packager": "^12.1.2"
+  }
+}
